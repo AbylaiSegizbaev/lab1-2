@@ -1,4 +1,4 @@
-'''#Task-1
+"""#Task-1
 
 sequence = [4, 8, 15, 16, 23, 42]
 
@@ -106,41 +106,41 @@ except ValueError as error:
 
 #Task-8
 try:
-    # Input: Population of the universe
+    #  Population of the universe
     population = int(input("Enter the population of the universe: "))
 
     
     if population % 2 == 1:
-        #  number of survivors
+        
         survivors = (population + 1) // 2
     else:
-        #  population survives
+       
         survivors = population // 2
 
-    #  number of survivors
+  
     print("Number of survivors:", survivors)
 
 except ValueError:
-    print("Invalid input. Please enter a valid integer for the population.")
-'''
-#Task-9
+    print("Неверный ввод. Пожалуйста, введите допустимое целое число.")
+"""
+# Task-9
 try:
-    
-    num= int(input("Enter a number: "))
+    # Ввод числа от пользователя
+    num = int(input("Введите число: "))
 
-    # Perform left shift operation
+    # Выполнение операции левого сдвига (<<)
     result = num << 1
 
-    # Check if the result is zero
+    # Проверка, равен ли результат нулю
     if result == 0:
-        print("Warning: The result of << is zero.")
+        print("Предупреждение: Результат << равен нулю.")
     else:
-        print(f"The result of << is {result}")
+        print(f"Результат << равен {result}")
 
 except ValueError:
-    print("Invalid input. Please enter a valid integer.")
+    print("Неверный ввод. Пожалуйста, введите целое число.")
 
-#Task-10 
+# Task-10
 try:
     #  Попросить пользователя ввести два числа
     num1 = float(input("Пожалуйста, введите первое число: "))
@@ -150,16 +150,16 @@ try:
     operation = input("Пожалуйста, выберите операцию (+, -, *, /): ")
 
     # Выполнить выбранную операцию и вывести результат
-    if operation == '+':
+    if operation == "+":
         result = num1 + num2
         print(f"{num1} + {num2} = {result}")
-    elif operation == '-':
+    elif operation == "-":
         result = num1 - num2
         print(f"{num1} - {num2} = {result}")
-    elif operation == '*':
+    elif operation == "*":
         result = num1 * num2
         print(f"{num1} * {num2} = {result}")
-    elif operation == '/':
+    elif operation == "/":
         if num2 == 0:
             print("Ошибка: Деление на ноль недопустимо.")
         else:
@@ -170,7 +170,5 @@ try:
 
 except ValueError:
     print("Неверный ввод. Пожалуйста, введите действительные числа.")
-except Exception as e:
-    print(f"Произошла ошибка: {e}")
-
-
+except Exception as error:
+    print(f"Произошла ошибка: {error}")
